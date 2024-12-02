@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class BackendService {
-  private baseUrl = 'http://localhost:8080'; // URL de tu backend Spring Boot
+  private baseUrl = 'https://crudrapido-app-latest.onrender.com'; // URL de tu backend Spring Boot
 
   constructor(private http: HttpClient) {}
 
