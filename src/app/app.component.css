@@ -1,0 +1,38 @@
+/* Fondo azul difuminado en la navbar */
+.navbar {
+  background: linear-gradient(to right, #4CAF50, #8BC34A); /* Gradiente verde */
+}
+
+
+.navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: white !important;
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: white !important;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* Efecto de hover en el navbar */
+.navbar-nav .nav-item .nav-link.active {
+  background-color: #4b6cb7;
+  border-radius: 5px;
+}
+
+/* Ajuste de responsive para mejorar el navbar en móviles */
+.navbar-toggler-icon {
+  background-color: #ffffff;
+}
