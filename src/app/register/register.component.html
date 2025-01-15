@@ -1,0 +1,27 @@
+<!-- Formulario de registro -->
+<div class="container">
+  <div class="form-container">
+    <h2>Formulario de Registro</h2>
+    <form (ngSubmit)="onSubmit()">
+      <!-- Campo de primer nombre -->
+      <div class="mb-3">
+        <label for="inputFirstName" class="form-label">Primer Nombre:</label>
+        <input type="text" id="inputFirstName" [(ngModel)]="formFirstName" name="nombreUsuario" class="form-control" required>
+      </div>
+
+      <!-- Campo de segundo nombre -->
+      <div class="mb-3">
+        <label for="inputLastName" class="form-label">Segundo Nombre:</label>
+        <input type="text" id="inputLastName" [(ngModel)]="formLastName" name="formLastName" class="form-control">
+      </div>
+
+      <!-- Campo de correo -->
+      <div class="mb-3">
+        <label for="inputEmail" class="form-label">Correo Electrónico:</label>
+        <input type="email" id="inputEmail" [(ngModel)]="formEmail" name="formEmail" class="form-control" required>
+      </div>
+
+      <button type="submit" class="btn btn-info w-100">Enviar</button>
+    </form>
+  </div>
+</div>

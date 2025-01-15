@@ -1,9 +1,10 @@
-/* Fondo azul difuminado en la navbar */
+/* Estilo para la navbar con un degradado celeste */
 .navbar {
-  background: linear-gradient(to right, #4CAF50, #8BC34A); /* Gradiente verde */
+  background: linear-gradient(to right, #66b3ff, #4d94ff); /* Degradado suave en tonos celestes */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
-
+/* Estilo del título de la navbar */
 .navbar-brand {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -11,6 +12,7 @@
   font-size: 1.5rem;
 }
 
+/* Estilo de los enlaces del menú */
 .navbar-nav .nav-item .nav-link {
   color: white !important;
   font-family: 'Poppins', sans-serif;
@@ -21,14 +23,15 @@
   transition: background-color 0.3s;
 }
 
+/* Efecto de hover en los enlaces */
 .navbar-nav .nav-item .nav-link:hover {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
 }
 
-/* Efecto de hover en el navbar */
+/* Estilo de la opción activa del navbar */
 .navbar-nav .nav-item .nav-link.active {
-  background-color: #4b6cb7;
+  background-color: #80bfff;
   border-radius: 5px;
 }
 

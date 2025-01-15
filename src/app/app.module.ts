@@ -4,12 +4,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NombreDelComponenteComponent } from './nombre-del-componente/nombre-del-componente.component';
 import { HttpClientModule } from '@angular/common/http'; // <-- Asegúrate de importar esto
-import { FormsModule } from '@angular/forms';  // Importa FormsModule
+import { FormsModule } from '@angular/forms';
+import { RegisterComponent } from './register/register.component';
+import { ComponentePruebaComponent } from './componente-prueba/componente-prueba.component';
+import { ListEstudiantesComponent } from './list-estudiantes/list-estudiantes.component';
+import { HomeComponent } from './home/home.component';  // Importa FormsModule
 
 @NgModule({
   declarations: [
     AppComponent,
-    NombreDelComponenteComponent
+    NombreDelComponenteComponent,
+    RegisterComponent,
+    ComponentePruebaComponent,
+    ListEstudiantesComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,39 @@
+<!-- Mostrar todos los estudiantes -->
+<div *ngIf="datosTodosEstudiantes && datosTodosEstudiantes.length > 0">
+  <div class="container mt-4">
+    <div class="col-12 col-md-8 p-4 mx-auto" style="border: 2px solid #b3b3b3; border-radius: 8px;">
+      <h2 class="text-center mb-4" style="color: #333333;">Lista de Todos los Estudiantes</h2>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Tarjetas en columnas de 12 en pantallas pequeñas y 6 en pantallas grandes -->
+        <div class="col-12 col-md-6" *ngFor="let estudiante of paginatedEstudiantes">
+          <div class="card shadow-sm mb-4" style="border: 2px solid #b3b3b3; border-radius: 8px;">
+            <div class="card-body">
+              <h5 class="card-title text-center mb-3">Estudiante</h5>
+              <p><strong>Primer Nombre:</strong> {{ estudiante.firstName || 'No disponible' }}</p>
+              <p><strong>Segundo Nombre:</strong> {{ estudiante.lastName || 'No disponible' }}</p>
+              <p><strong>ID:</strong> {{ estudiante.studentId || 'No disponible' }}</p>
+              <p><strong>Email:</strong> {{ estudiante.email || 'No disponible' }}</p>
+              <a href="#" class="btn btn-info w-100">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paginación -->
+      <div class="d-flex justify-content-between">
+        <button (click)="anteriorPagina()" [disabled]="currentPage === 1" class="btn btn-secondary">
+          Anterior
+        </button>
+        <button (click)="siguientePagina()" [disabled]="currentPage * itemsPerPage >= datosTodosEstudiantes.length" class="btn btn-secondary">
+          Siguiente
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Mensaje si no hay estudiantes -->
+<div *ngIf="datosTodosEstudiantes.length === 0" class="text-center">
+  <p>No hay estudiantes disponibles.</p>
+</div>

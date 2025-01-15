@@ -1,0 +1,63 @@
+/* Efecto de sombra suave en las tarjetas de estudiantes */
+.card {
+  border: 2px solid #b3b3b3;
+  border-radius: 12px;  /* Bordes más redondeados */
+  background: rgba(255, 255, 255, 0.8);  /* Fondo blanco suave */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 0 15px rgba(0, 0, 0, 0.05); /* Difuminado suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Transición para el hover */
+}
+
+/* Efecto de hover en las tarjetas de estudiantes (al pasar el ratón) */
+.card:hover {
+  transform: translateY(-5px); /* Levanta ligeramente la tarjeta */
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2), 0 0 25px rgba(0, 0, 0, 0.1);  /* Sombra más intensa */
+}
+
+/* Fondo suave del contenedor */
+.container {
+  background: rgba(255, 255, 255, 0.95);  /* Fondo ligeramente transparente */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);  /* Difuminado suave en el contenedor */
+}
+
+/* Estilo del botón de acción en las tarjetas (Ver más) */
+.btn-info {
+  background-color: #66b3ff !important;
+  border-color: #66b3ff !important;
+  color: white !important;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Animaciones de color y de interacción */
+}
+
+.btn-info:hover {
+  background-color: #80bfff !important;
+  border-color: #80bfff !important;
+  transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
+}
+
+/* Sombra suave para el botón */
+.btn-info:focus, .btn-info:active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos en las tarjetas */
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333333; /* Un color más oscuro para el título */
+}
+
+/* Títulos y otros textos */
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #333333;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Un leve difuminado en el texto para el título */
+}
+
+/* Para las tarjetas sin estudiantes (mensaje de error) */
+.text-center p {
+  font-size: 1.2rem;
+  color: #999999;
+  font-weight: 500;
+}

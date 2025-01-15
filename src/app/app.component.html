@@ -1,8 +1,7 @@
 <!-- Menú de navegación -->
 <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
   <div class="container">
-    <!-- Agregar ícono y cambiar fuente del título -->
-    <a class="navbar-brand" href="#" style="font-family: 'Poppins', sans-serif; font-weight: 600; color: white;">
+    <a class="navbar-brand" routerLink="/" style="font-family: 'Poppins', sans-serif; font-weight: 600; color: white;">
       <i class="fa fa-cogs"></i> Mi App
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,23 +10,28 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#" style="font-family: 'Poppins', sans-serif; font-weight: 500;">
+          <a class="nav-link active" routerLink="/inicioComponente" style="font-family: 'Poppins', sans-serif; font-weight: 500;">
             <i class="fa fa-home"></i> Inicio
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" (click)="mostrarFormulario()" style="font-family: 'Poppins', sans-serif; font-weight: 500;">
+          <a class="nav-link" routerLink="/registrar" style="font-family: 'Poppins', sans-serif; font-weight: 500;">
             <i class="fa fa-user-plus"></i> Registrar
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" style="font-family: 'Poppins', sans-serif; font-weight: 500;">
+          <a class="nav-link" routerLink="/acerca" style="font-family: 'Poppins', sans-serif; font-weight: 500;">
             <i class="fa fa-info-circle"></i> Acerca de
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" style="font-family: 'Poppins', sans-serif; font-weight: 500;">
+          <a class="nav-link" routerLink="/contacto" style="font-family: 'Poppins', sans-serif; font-weight: 500;">
             <i class="fa fa-envelope"></i> Contacto
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/lista_estudiantes" style="font-family: 'Poppins', sans-serif; font-weight: 500;">
+            <i class="fa fa-users"></i> Estudiantes
           </a>
         </li>
       </ul>
@@ -35,55 +39,8 @@
   </div>
 </nav>
 
-<!-- Formulario de registro -->
-<div class="container mt-5">
-  <div class="col-12 col-md-4 p-4 border rounded mx-auto" *ngIf="mostrarFormularioFlag">
-    <h2 class="mb-4">Formulario de Registro</h2>
-    <form (ngSubmit)="onSubmit()">
-      <!-- Campo de primer nombre -->
-      <div class="mb-3">
-        <label for="primerNombre" class="form-label">Primer Nombre:</label>
-        <input type="text" id="primerNombre" [(ngModel)]="primerNombre" name="primerNombre" class="form-control" required>
-      </div>
-
-      <!-- Campo de segundo nombre -->
-      <div class="mb-3">
-        <label for="segundoNombre" class="form-label">Segundo Nombre:</label>
-        <input type="text" id="segundoNombre" [(ngModel)]="segundoNombre" name="segundoNombre" class="form-control">
-      </div>
-
-      <!-- Campo de correo -->
-      <div class="mb-3">
-        <label for="correo" class="form-label">Correo Electrónico:</label>
-        <input type="email" id="correo" [(ngModel)]="correo" name="correo" class="form-control" required>
-      </div>
-
-      <!-- Botón de envío -->
-      <button type="submit" class="btn btn-primary w-100">Enviar</button>
-    </form>
-  </div>
-</div>
+<!-- Lugar donde se cargarán dinámicamente los componentes -->
+<router-outlet></router-outlet>
 
 
 
-
-
-
-
-
-
-
-
-<!--
-
-<br><br><br><br><br><br>
-aasas
-<h1>Datos desde Spring Boot:</h1>
-<ul>
-  <li *ngFor="let dato of datos">{{ dato }}</li>
-</ul>
-
-<button (click)="setDatos2()">Set Datos2</button>
-
-
--->
