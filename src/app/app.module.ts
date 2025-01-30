@@ -8,7 +8,8 @@ import { FormsModule } from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
 import { ComponentePruebaComponent } from './componente-prueba/componente-prueba.component';
 import { ListEstudiantesComponent } from './list-estudiantes/list-estudiantes.component';
-import { HomeComponent } from './home/home.component';  // Importa FormsModule
+import { HomeComponent } from './home/home.component';
+import { PingComponent } from './ping/ping.component';  // Importa FormsModule
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HomeComponent } from './home/home.component';  // Importa FormsModule
     RegisterComponent,
     ComponentePruebaComponent,
     ListEstudiantesComponent,
-    HomeComponent
+    HomeComponent,
+    PingComponent
   ],
   imports: [
     BrowserModule,
