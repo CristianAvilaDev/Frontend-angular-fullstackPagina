@@ -29,7 +29,7 @@ export class RegisterComponent implements OnInit {
 
     console.log('Datos a enviar:', datos);
 
-    this.backendService.enviarDatoJson(datos).subscribe(response => {
+    this.backendService.enviarEstudianteAlBackend(datos).subscribe(response => {
       console.log('Respuesta del backend:', response);
     }, error => {
       console.error('Error al enviar los datos:', error);

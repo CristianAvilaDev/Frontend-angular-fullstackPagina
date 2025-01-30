@@ -12,31 +12,45 @@ export class BackendService {
 
   constructor(private http: HttpClient) {}
 
-  // Método para obtener datos un texto simple (ya está configurado)
-  getDatos(): Observable<any> {
-    return this.http.get(`${this.baseUrl}/api/datos`);
-  }
 
-  // Método para obtener todos lo usuarios
-  getDatosTOdosUsuarios(): Observable<any> {
-    return this.http.get(`${this.baseUrl}/api/todosLosUsuarios`);
-  }
+  // Aqui usamos los endpoint de estudiante controller  -------------------------
 
 
-
-
-enviarDato(dato: string): Observable<any> {
-  return this.http.post(`${this.baseUrl}/api/recibirDato`, dato, { responseType: 'text' });
-}
-
-  // Método modificado para enviar datos en formato JSON
-  enviarDatoJson(dato: any): Observable<any> {
-    return this.http.post(`${this.baseUrl}/api/recibirDatoJson`, dato, {
+  // enviar estudiante en forma de json al backend
+ enviarEstudianteAlBackend(dato: any): Observable<any> {
+    return this.http.post(`${this.baseUrl}/api/estudiantes/guardarEstudiante`, dato, {
       headers: { 'Content-Type': 'application/json' },
       responseType: 'json'
     });
   }
 
+  // Método para obtener todos lo usuarios
+  getDatosTOdosUsuarios(): Observable<any> {
+    return this.http.get(`${this.baseUrl}/api/estudiantes/obtenerEstudiantes`);
+  }
+
+  //-------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+  // estaba haciendo prueba no mas esto no es necesario ---------------------------
+
+
+  //enviar uan simple cadena de texto
+   getDatos(): Observable<any> {
+     return this.http.get(`${this.baseUrl}/api/datos`);
+   }
+
+ //recibe una cadena de texto ,creo, no me acuerdo
+ enviarDato(dato: string): Observable<any> {
+   return this.http.post(`${this.baseUrl}/api/recibirDato`, dato, { responseType: 'text' });
+
+ }
+  //--------------------------------------------------------------------------------------------
 
 
 
