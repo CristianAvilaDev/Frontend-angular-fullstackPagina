@@ -1,59 +1,31 @@
-# PrjAngular
+# Frontend para Sistema CRUD con Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.2.
+Este repositorio contiene el frontend de un sistema CRUD desarrollado con Angular, diseñado para consumir la API RESTful proporcionada por el backend en Spring Boot y PostgreSQL.
 
-## Development server
+## Características principales:
+- Interfaz de usuario interactiva construida con Angular.
+- Comunicación con la API RESTful del backend para realizar operaciones CRUD.
+- Desarrollado utilizando Angular y TypeScript.
+- Despliegue en Vercel para facilidad de acceso.
 
-To start a local development server, run:
+## Acceso al Frontend:
+- Frontend en producción: [https://inspiratendencias.netlify.app](https://inspiratendencias.netlify.app)
+- Otro acceso al frontend: [https://fullstack-pagina-frontend-v1.vercel.app/](https://fullstack-pagina-frontend-v1.vercel.app/)
 
-```bash
-ng serve
-```
+## Backend:
+- Repositorio del backend: [Aquí](https://github.com/CristianAvilaDev/FullstackPagina-backend-v1)
+- API en producción: [https://crudrapido-app-latest.onrender.com](https://crudrapido-app-latest.onrender.com)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Requisitos
 
-## Code scaffolding
+Antes de ejecutar el proyecto localmente, asegúrate de tener instalados los siguientes programas:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **Node.js** (versión 16 o superior).
+- **Angular CLI** (puedes instalarlo globalmente con `npm install -g @angular/cli`).
 
-```bash
-ng generate component component-name
-```
+## Instalación y despliegue local
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+### Clonar el repositorio
 
 ```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+git clone https://github.com/CristianAvilaDev/FullstackPagina-frontend-v1
