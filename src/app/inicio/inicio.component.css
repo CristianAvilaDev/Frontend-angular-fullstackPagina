@@ -1,0 +1,44 @@
+/* Estilos generales */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+}
+
+/* Encabezado */
+.header {
+  background: linear-gradient(135deg, #007bff, #6610f2);
+  padding: 60px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de presentación */
+.presentation {
+  background-color: #ffffff;
+}
+
+/* Sección de características */
+.features {
+  background-color: #f8f9fa;
+}
+
+.feature-box {
+  background: #ffffff;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature-box:hover {
+  transform: scale(1.05);
+}
+
+/* Llamado a la acción */
+.cta {
+  background: linear-gradient(135deg, #28a745, #218838);
+  color: white;
+}
+
+/* Pie de página */
+.footer {
+  background: #343a40;
+}

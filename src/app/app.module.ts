@@ -8,7 +8,11 @@ import { FormsModule } from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
 
 import { ListEstudiantesComponent } from './list-estudiantes/list-estudiantes.component';
-import { HomeComponent } from './home/home.component';
+
+import { UsuarioComponent } from './usuario/usuario.component';
+
+import { InicioComponent } from './inicio/inicio.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -18,7 +22,11 @@ import { HomeComponent } from './home/home.component';
     RegisterComponent,
 
     ListEstudiantesComponent,
-    HomeComponent
+
+    UsuarioComponent,
+
+    InicioComponent,
+      FooterComponent
 
   ],
   imports: [

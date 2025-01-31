@@ -1,3 +1,13 @@
+
+/* Encabezado */
+.header {
+  background: linear-gradient(135deg, #007bff, #6610f2);
+  padding: 60px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
 /* Efecto de sombra suave en las tarjetas de estudiantes */
 .card {
   border: 2px solid #b3b3b3;
@@ -55,9 +65,5 @@ h2 {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Un leve difuminado en el texto para el título */
 }
 
-/* Para las tarjetas sin estudiantes (mensaje de error) */
-.text-center p {
-  font-size: 1.2rem;
-  color: #999999;
-  font-weight: 500;
-}
+
+

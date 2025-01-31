@@ -33,7 +33,6 @@ export class RegisterComponent implements OnInit {
       modal.classList.remove('show');
       modal.style.display = 'none';
     }
-
   }
 
   // Método para manejar el envío del formulario y enviar los datos al backend

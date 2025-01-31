@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
   <div class="container">
     <a class="navbar-brand" routerLink="/" style="font-family: 'Poppins', sans-serif; font-weight: 600; color: white;">
-      <i class="fa fa-cogs"></i> Mi App
+      <i class="fa fa-cogs"></i> ShopSphere
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -10,7 +10,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" routerLink="/inicioComponente" style="font-family: 'Poppins', sans-serif; font-weight: 500;">
+          <a class="nav-link active" routerLink="/inicio" style="font-family: 'Poppins', sans-serif; font-weight: 500;">
             <i class="fa fa-home"></i> Inicio
           </a>
         </li>
@@ -42,3 +42,51 @@
 
 <!-- Lugar donde se cargarán dinámicamente los componentes -->
 <router-outlet></router-outlet>
+
+<!-- Llamado a la acción -->
+<section class="cta text-center py-5">
+  <div class="container">
+    <h2 class="fw-bold text-white">Únete a nosotros</h2>
+    <p class="text-white">No pierdas la oportunidad de formar parte de nuestra comunidad.</p>
+    <button class="btn btn-light btn-lg mt-3">Empieza Ahora</button>
+  </div>
+</section>
+
+
+
+
+
+<!-- Sección de contacto y redes sociales -->
+<section class="contact-section">
+  <div class="container-fluid"> <!-- Contenedor que ocupa todo el ancho -->
+    <div class="row"> <!-- Fila para el título -->
+      <div class="col-12 text-center">
+        <h2>¡Contáctanos!</h2>
+        <p>¿Tienes alguna pregunta o comentario? No dudes en ponerte en contacto con nosotros.</p>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="social-media row justify-content-center mt-4">
+      <h3>Síguenos en nuestras redes sociales</h3>
+      <div class="social-icons">
+        <a href="#" class="social-icon facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Pie de página -->
+<footer class="footer text-center text-white py-4">
+  <p>&copy; 2025 Todos los derechos reservados | <a href="#" class="text-white fw-bold">Términos y condiciones</a></p>
+</footer>
+

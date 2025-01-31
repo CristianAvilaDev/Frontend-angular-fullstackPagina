@@ -1,0 +1,13 @@
+.card {
+  border: 2px solid #b3b3b3;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 0 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 350px;
+  margin: 20px auto 0;  /* Margen superior de 20px */
+}
+
+.card-body {
+  padding: 1.25rem;
+}

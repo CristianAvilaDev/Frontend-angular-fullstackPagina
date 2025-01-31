@@ -1,3 +1,9 @@
+<header class="header text-white text-center py-5">
+  <h1>Lista de Estudiantes</h1>
+  <p>Este es el listado de todos los estudiantes registrados en el sistema en nuestra base de datos. Puedes ver,
+    editar o eliminar haciendo clic en la opción "editar".</p>
+</header>
+
 <!-- Mostrar todos los estudiantes -->
 <div *ngIf="datosTodosEstudiantes && datosTodosEstudiantes.length > 0">
   <div class="container mt-4">
@@ -14,7 +20,9 @@
               <p><strong>Segundo Nombre:</strong> {{ estudiante.lastName || 'No disponible' }}</p>
               <p><strong>ID:</strong> {{ estudiante.studentId || 'No disponible' }}</p>
               <p><strong>Email:</strong> {{ estudiante.email || 'No disponible' }}</p>
-              <a href="#" class="btn btn-info w-100">Ver más</a>
+              <a [routerLink]="['/usuario', estudiante.studentId]" class="btn btn-info w-100">Editar</a>
+
+
             </div>
           </div>
         </div>

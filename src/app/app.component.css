@@ -10,6 +10,8 @@
   font-weight: 600;
   color: white !important;
   font-size: 1.5rem;
+
+
 }
 
 /* Estilo de los enlaces del menú */
@@ -39,3 +41,120 @@
 .navbar-toggler-icon {
   background-color: #ffffff;
 }
+
+
+
+
+/* Llamado a la acción */
+.cta {
+  background: linear-gradient(135deg, #28a745, #218838);
+  color: white;
+}
+
+/* Pie de página */
+.footer {
+  background: #343a40;
+}
+
+
+
+
+
+
+
+/* Estilos para la sección de contacto */
+.contact-section {
+  background-color: #f8f9fa;
+  padding: 30px 20px; /* Reducir el padding superior e inferior */
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem; /* Reducir el tamaño del título */
+  margin-bottom: 15px; /* Reducir el margen inferior */
+  color: #333;
+}
+
+.contact-section p {
+  font-size: 1rem; /* Reducir el tamaño del texto */
+  margin-bottom: 30px; /* Reducir el margen inferior */
+  color: #555;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Reducir aún más el espacio entre los cuadros */
+  margin-bottom: 20px; /* Reducir el margen inferior */
+}
+
+.contact-item {
+  background-color: #ffffff;
+  padding: 12px; /* Reducir el padding dentro de los cuadros */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 120px; /* Reducir el ancho de los cuadros */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.contact-item i {
+  font-size: 1.8rem; /* Reducir el tamaño de los iconos */
+  color: #007bff;
+  margin-bottom: 8px; /* Reducir el espacio debajo del icono */
+}
+
+.contact-item p {
+  font-size: 0.9rem; /* Reducir el tamaño del texto */
+  color: #333;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+/* Estilos para las redes sociales */
+.social-media {
+  margin-top: 20px; /* Reducir el margen superior */
+}
+
+.social-media h3 {
+  font-size: 1.5rem; /* Reducir el tamaño del título */
+  margin-bottom: 15px; /* Reducir el margen inferior */
+  color: #333;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Reducir el espacio entre los iconos */
+}
+
+.social-icon {
+  font-size: 2rem; /* Reducir el tamaño de los iconos sociales */
+  color: #fff;
+  background-color: #007bff;
+  padding: 8px; /* Reducir el padding */
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+    gap: 10px; /* Reducir aún más el espacio entre los cuadros */
+  }
+
+  .contact-item {
+    width: 100%;
+    max-width: 250px; /* Reducir el tamaño máximo de los cuadros */
+    margin: 0 auto;
+  }
+}
+
+

@@ -1,0 +1,45 @@
+<div class="card shadow-sm mb-4">
+  <div class="card-body">
+    <h5 class="card-title text-center mb-3">Estudiante</h5>
+    <p><strong>Primer Nombre:</strong>
+      <span *ngIf="!isEditing">{{ estudiante.firstName || 'No disponible' }}</span>
+      <input *ngIf="isEditing" [(ngModel)]="estudiante.firstName" />
+    </p>
+    <p><strong>Segundo Nombre:</strong>
+      <span *ngIf="!isEditing">{{ estudiante.lastName || 'No disponible' }}</span>
+      <input *ngIf="isEditing" [(ngModel)]="estudiante.lastName" />
+    </p>
+    <p><strong>ID:</strong> {{ estudiante.studentId || 'No disponible' }}</p>
+    <p><strong>Email:</strong>
+      <span *ngIf="!isEditing">{{ estudiante.email || 'No disponible' }}</span>
+      <input *ngIf="isEditing" [(ngModel)]="estudiante.email" />
+    </p>
+
+    <!-- Contenedor para los botones -->
+    <div class="d-flex justify-content-around">
+      <button *ngIf="!isEditing" (click)="editarEstudiante(estudiante)" class="btn btn-warning">Editar</button>
+      <button *ngIf="!isEditing" (click)="borrarEstudiante(estudiante)" class="btn btn-danger">Borrar</button>
+      <button *ngIf="isEditing" (click)="guardarCambios(estudiante)" class="btn btn-success">Guardar</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal de éxito -->
+<div class="modal" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Eliminación exitosa</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="closeModal()"></button>
+      </div>
+      <div class="modal-body">
+        ¡Usuario eliminado!
+      </div>
+      <div class="modal-footer">
+        <!-- Botón Aceptar que redirige a la página de inicio -->
+        <button type="button" class="btn btn-primary" routerLink="/inicio" (click)="closeModal()">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>

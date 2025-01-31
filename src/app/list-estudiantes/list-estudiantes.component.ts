@@ -19,6 +19,10 @@ export class ListEstudiantesComponent implements OnInit {
   ngOnInit(): void {
     this.obtenerDatosTOdosLosUsuarios();  // Cargar los datos al iniciar el componente
   }
+verMasEstudiante(estudiante: any): void {
+  console.log(estudiante.studentId);  // Imprime el ID del estudiante
+}
+
 
   // Obtiene todos los estudiantes desde el backend
   private obtenerDatosTOdosLosUsuarios(): void {

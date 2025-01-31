@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class BackendService {
-  private baseUrl = 'https://crudrapido-app-latest.onrender.com'; // URL de tu backend Spring Boot
+ private baseUrl = 'https://crudrapido-app-latest.onrender.com'; // URL de tu backend Spring Boot
 //private baseUrl = 'http://localhost:8080'; // URL de tu backend Spring Boot
 
   constructor(private http: HttpClient) {}
@@ -29,28 +29,37 @@ export class BackendService {
     return this.http.get(`${this.baseUrl}/api/estudiantes/obtenerEstudiantes`);
   }
 
+
+getEstudiante(idEstudiante: string): Observable<any> {
+  return this.http.get(`${this.baseUrl}/api/estudiantes/obtenerEstudiante/${idEstudiante}`);
+}
+
+deleteEstudiante(idEstudiante: string): Observable<any> {
+  return this.http.delete(`${this.baseUrl}/api/estudiantes/${idEstudiante}`);
+}
+actualizarEstudiante(idEstudiante: string, estudiante: any): Observable<any> {
+  // Enviamos el id y el cuerpo con los datos del estudiante
+  return this.http.put(`${this.baseUrl}/api/estudiantes/actualizarEstudiante/${idEstudiante}`, estudiante);
+}
+
+
+
+  eliminarEstudiante(id: string ): string {
+    return "hola";
+
+  }
+
+
+  editarEstudiante (id: string ):  string  {
+    return "hola";
+
+  }
+
+
   //-------------------------------------------------------------------------------------------
 
 
 
-
-
-
-
-  // estaba haciendo prueba no mas esto no es necesario ---------------------------
-
-
-  //enviar uan simple cadena de texto
-   getDatos(): Observable<any> {
-     return this.http.get(`${this.baseUrl}/api/datos`);
-   }
-
- //recibe una cadena de texto ,creo, no me acuerdo
- enviarDato(dato: string): Observable<any> {
-   return this.http.post(`${this.baseUrl}/api/recibirDato`, dato, { responseType: 'text' });
-
- }
-  //--------------------------------------------------------------------------------------------
 
 
 

@@ -13,9 +13,9 @@ body {
 /* Estilo del contenedor del formulario */
 .container {
   width: 100%;
-  max-width: 500px; /* Ancho máximo del formulario */
-  margin: 50px auto; /* Aumentar margen superior e inferior */
-  padding: 0 15px; /* Agregar espaciado horizontal */
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 0 15px;
 }
 
 /* Estilo de los contenedores del formulario */
@@ -25,6 +25,12 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   padding: 30px;
   width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-container:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* Título del formulario */
@@ -34,6 +40,8 @@ h2 {
   color: #333;
   text-align: center;
   margin-bottom: 1.5rem;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ddd;
 }
 
 /* Estilo de las etiquetas */
@@ -64,7 +72,7 @@ h2 {
 
 /* Estilo para el botón */
 .btn-info {
-  background-color: #4e8dcb; /* Azul más suave */
+  background-color: #4e8dcb;
   border-color: #4e8dcb;
   color: #fff;
   font-size: 1.1rem;
@@ -76,7 +84,7 @@ h2 {
 }
 
 .btn-info:hover {
-  background-color: #396aa8; /* Un tono aún más suave para el hover */
+  background-color: #396aa8;
   border-color: #396aa8;
 }
 
@@ -88,5 +96,21 @@ h2 {
 
 /* Márgenes entre campos */
 .mb-3 {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
 }
+
+/* Estilo adicional para el formulario */
+.form-container {
+  background: linear-gradient(135deg, #f8f9fa, #ffffff);
+}
+
+
+
+/* Encabezado */
+.header {
+  background: linear-gradient(135deg, #007bff, #6610f2);
+  padding: 60px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+
