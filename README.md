@@ -5,7 +5,7 @@ Este repositorio contiene el frontend de un proyecto fullstack desarrollado con 
 
 ## Características principales:
 - Interfaz de usuario interactiva construida con Angular.
-- Comunicación con la API RESTful del backend, creada para este proyecto.
+- Diseñado para ser consumido por el frontend en Angular del proyecto FullstackPagina.
 - Desarrollado utilizando Angular y TypeScript.
 - Despliegue en Vercel para facilidad de acceso.
 
