@@ -1,4 +1,4 @@
-#Frontend para el Proyecto Fullstack con Angular
+## ** Frontend para el Proyecto Fullstack con Angular **
 
 Este repositorio contiene el frontend de FullstackPagina, un proyecto fullstack que consta de un frontend desarrollado en Angular y un backend en Spring Boot. Este frontend está diseñado para consumir los datos proporcionados por el backend, Los componentes del frontend interactúan directamente con el backend para ofrecer la funcionalidad necesaria para la aplicación.
 
