@@ -1,6 +1,7 @@
-# Frontend para Sistema CRUD con Angular
+# Frontend para Proyecto Fullstack con Angular
 
-Este repositorio contiene el frontend de un sistema CRUD desarrollado con Angular, diseñado para consumir la API RESTful proporcionada por el backend en Spring Boot y PostgreSQL.
+Este repositorio contiene el frontend de un proyecto fullstack desarrollado con Angular, diseñado para consumir exclusivamente la API RESTful proporcionada por el backend en Spring Boot y PostgreSQL.
+
 
 ## Características principales:
 - Interfaz de usuario interactiva construida con Angular.
