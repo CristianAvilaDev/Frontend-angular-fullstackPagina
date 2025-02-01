@@ -5,9 +5,10 @@ Este repositorio contiene el frontend de un proyecto fullstack desarrollado con 
 
 ## Características principales:
 - Interfaz de usuario interactiva construida con Angular.
-- Comunicación con la API RESTful del backend para realizar operaciones CRUD.
+- Comunicación con la API RESTful del backend, creada para este proyecto.
 - Desarrollado utilizando Angular y TypeScript.
 - Despliegue en Vercel para facilidad de acceso.
+
 
 ## Acceso al Frontend:
 - Frontend en producción: [https://inspiratendencias.netlify.app](https://inspiratendencias.netlify.app)
