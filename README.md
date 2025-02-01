@@ -1,11 +1,10 @@
-# Frontend para Proyecto Fullstack con Angular
+#Frontend para el Proyecto Fullstack con Angular
 
-Este repositorio contiene el frontend de un proyecto fullstack desarrollado con Angular, diseñado para consumir exclusivamente la API RESTful proporcionada por el backend en Spring Boot y PostgreSQL.
-
+Este repositorio contiene el frontend de FullstackPagina, un proyecto fullstack que consta de un frontend desarrollado en Angular y un backend en Spring Boot. Este frontend está diseñado para consumir los datos proporcionados por el backend, Los componentes del frontend interactúan directamente con el backend para ofrecer la funcionalidad necesaria para la aplicación.
 
 ## Características principales:
 - Interfaz de usuario interactiva construida con Angular.
-- Diseñado para ser consumido por el frontend en Angular del proyecto FullstackPagina.
+- Diseñado para comunicarse con el backend en Spring Boot del proyecto FullstackPagina.
 - Desarrollado utilizando Angular y TypeScript.
 - Despliegue en Vercel para facilidad de acceso.
 
