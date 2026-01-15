@@ -6,7 +6,7 @@ Este repositorio contiene el frontend de FullstackPagina, un proyecto fullstack 
 - Interfaz de usuario interactiva construida con Angular.
 - Diseñado para comunicarse con el backend en Spring Boot del proyecto FullstackPagina.
 - Desarrollado utilizando Angular y TypeScript.
-- Despliegue en Vercel para facilidad de acceso.
+- Despliegue en Vercel para facilidad de acceso..
 
 
 ## Acceso al Frontend:
